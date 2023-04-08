@@ -19,3 +19,8 @@ if __name__ == '__main__':
     print(results)
 ```
 
+
+设置限制(并行数, 启动时):
+```bash
+celery -A your_project.celery worker --loglevel=info --concurrency=1
+```
