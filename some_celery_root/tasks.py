@@ -1,4 +1,4 @@
-from celery import Celery
+from some_pkg.add import add_alt
 
 from celery import Celery
 import platform
@@ -15,4 +15,4 @@ app = Celery('tasks', broker='amqp://yada:TempPassMQ0@54.160.137.8/myvhost',
 
 @app.task
 def add(x, y):
-    return x + y
+    return add_alt(x, y)

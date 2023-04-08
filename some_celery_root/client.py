@@ -1,6 +1,6 @@
 import time
 
-from tasks import add
+from some_celery_root.tasks import add
 from celery import group
 def add_inf():
     while True:
